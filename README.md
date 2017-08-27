@@ -1,44 +1,45 @@
 
-= AutoGif
+## AutoGif
+=======
 
 Automated creation of gif for automated tests(Mobile and Web).
 
 This can be used to create gif for a running automated test( Mobile or Web). This gif can then be embedded in your test reports.
 Helps a lot while debugging failing tests or bug creation.
 
-== Installation
+## Installation
 
 Add this gem to your project's Gemfile. Add the below command to your Gemfile:
 
-    gem 'autogif'
+-    gem 'autogif'
 
  And then execute below command from your terminal:
 
-    $ bundle
+-    $ bundle
 
 Or install it yourself by running below command from your terminal:
 
-    $ gem install autogif
+-    $ gem install autogif
 
-== How to use it:
+## How to use it:
 
 If you are using Cucumber in your project, then add the following to your env.rb:
   require 'autogif'
 
- For Android:
+- For Android:
      a. AutoGif.root_directory = your project's root directory
      b. AutoGif.platform = :android
 
- For iOS:
+- For iOS:
      a. AutoGif.root_directory = your project's root directory
      b. AutoGif.platform = :ios
 
-For taking/sending screenshots to this gem, add below method at the place where you want to take screeshots
+- For taking/sending screenshots to this gem, add below method at the place where you want to take screeshots
 (Eg. before click is performed, after click is performed etc..)
 
     store_screens(<name_of_screenshot>)
 
-For creating gif, add the below method where you want gif should be created
+- For creating gif, add the below method where you want gif should be created
 (Eg. After scenario is executed, after scenario is failed, etc..)
 
     get_gif(<name_for_gif>)
@@ -49,7 +50,7 @@ For deleting screenshots that were taken to create gif, add the below method
 
 Note: Desired gif will be added to your project's root folder.
 
-== Contributing to HelloGif
+## Contributing to autogif
 
 1. Fork it ( http://github.com/<my-github-username>/autogif/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
